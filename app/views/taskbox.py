@@ -1,6 +1,6 @@
 import customtkinter as ctk
-from app.controllers.task_controller import TaskController
 
+from app.controllers.task_controller import TaskController
 
 
 class TaskBox(ctk.CTkScrollableFrame):
@@ -13,6 +13,5 @@ class TaskBox(ctk.CTkScrollableFrame):
         self.configure(corner_radius=6)
         self.configure(fg_color="transparent")
 
-        self.tasks = []
-        self.task_controller = TaskController(self)
+        self.controller = TaskController(self)
 

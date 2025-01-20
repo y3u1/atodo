@@ -1,4 +1,7 @@
 import random
+import inspect
+import sys
+
 
 def rand_color():
     colors = [
